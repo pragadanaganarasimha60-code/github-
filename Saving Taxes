@@ -1,0 +1,16 @@
+import sys
+try:
+    line = sys.stdin.readline()
+    if line:
+        t = int(line.strip())
+        
+        for _ in range(t):
+            data = sys.stdin.readline().split()
+            if not data:
+                break
+            
+            x = int(data[0])
+            y = int(data[1])
+            print(x - y)
+except EOFError:
+    pass
